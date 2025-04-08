@@ -34,3 +34,29 @@ mensaje(77);
 mensaje(70);
 mensaje(0);
 mensaje(-3);
+
+let frutas = [
+  "Manzana",
+  "Sandia",
+  "Fresa",
+  "Melon",
+  "Fresa",
+  "Mandarina",
+  "Manzana",
+  "Manzana",
+  "Melon",
+  "Mandarina",
+];
+let cantidadFrutas = {};
+
+for (let i = 0; i < frutas.length; i++) {
+  let fruta = frutas[i];
+
+  if (cantidadFrutas[fruta]) {
+    cantidadFrutas[fruta]++;
+  } else {
+    cantidadFrutas[fruta] = 1;
+  }
+}
+
+console.log(cantidadFrutas);
